@@ -19,22 +19,27 @@ a {
     margin: 10px;
     font-size: 30px;
     text-decoration: none;
+    display: flex;
+    justify-content: center;
 }
 
 
 h1{
     color: #eeeeee;
+    background-color: #00000099;
     font-size: 50px;
     padding: 0%;
     margin: 0% 0% 1% 0%;
+    border-radius: 10px;
 }
 
 h2{
     color: #b7ff00;
+    background-color: #00000055;
     font-size: 40px;
     padding: 0%;
     margin: 0%;
-    
+    border-radius: 10px;
 }
 
 section{
@@ -50,8 +55,22 @@ section{
     border-radius: 100%;
 }
 
+.accent{
+    font-size: 25px;
+    color: #aaffee;
+    padding: 0%;
+    margin: 0%;
+    display: inline;
+}
+.linkicon {
+    width: 30px;
+    height: 30px;
+    justify-self: center;
+    padding: 0%;
+    margin: 0%;
+}
 .abm{
-    background-color: #00aaff;
+    background-image: linear-gradient(#00aaee,#0077ff);
     color: #222222;
     border: #000000 solid 2px;
     border-radius: 15px;
@@ -59,14 +78,13 @@ section{
 }
 
 .abm:hover{
-    background-color: #00ffaa;
     color: #000000;
     border: 2px solid #ffffff;
     border-radius: 10px;
 }
 
 .links{
-    background-color: #aa00ff;
+    background-image: linear-gradient(#aa00ee,#7700ff);
     color: #222222;
     border: #000000 solid 2px;
     border-radius: 15px;
@@ -74,7 +92,6 @@ section{
 }
 
 .links:hover{
-    background-color: #ff00aa;
     color: #000000;
     border: 2px solid #ffffff;
     border-radius: 10px;

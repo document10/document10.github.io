@@ -4,5 +4,5 @@ This is the repository for my personal website containing info about me as well 
 
 ## Credits
 
-Inspired from : https://replit.com/@STARSHIPSTUDIOS/Linktree-v2  
-Backgroun image generated using AI (looked cool)
+[Inspiration](https://replit.com/@STARSHIPSTUDIOS/Linktree-v2)  
+[Background image generated using AI (looked cool)](https://imgur.com/gallery/YdMlsh9)
