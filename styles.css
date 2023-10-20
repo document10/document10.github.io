@@ -1,49 +1,16 @@
-@import url('https://fonts.googleapis.com/css2?family=Dosis&family=Playpen+Sans&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dosis&family=Playpen+Sans&family=Roboto&family=Source+Code+Pro&display=swap');
+
 * {
     box-sizing: border-box;
 }
 
 body{
     background-color: #00ffff;
-    text-align: center;
     background-image: url('img/vvww.png');
     background-repeat: no-repeat;
     background-origin: border-box;
     background-clip: border-box;
     background-size: cover;
-}
-
-a {
-    font-family: monospace;
-    color: #ffffff;
-    padding: 10px;
-    margin: 10px;
-    font-size: 30px;
-    text-decoration: none;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-
-h1{
-    font-family: 'Playpen Sans', cursive;
-    color: #eeeeee;
-    background-color: #00000099;
-    font-size: 50px;
-    padding: 0%;
-    margin: 0% 0% 1% 0%;
-    border-radius: 10px;
-}
-
-h2{
-    font-family: 'Roboto', sans-serif;
-    color: #b7ff00;
-    background-color: #00000055;
-    font-size: 40px;
-    padding: 0%;
-    margin: 0%;
-    border-radius: 10px;
 }
 
 section{
@@ -54,50 +21,100 @@ section{
     flex-direction: column;
 }
 
-#pfp{
-    border: 3px solid #000000;
-    border-radius: 100%;
+h1{
+    font-family: 'Playpen Sans', cursive;
+    text-align: center;
+    color: #eeeeee;
+    text-shadow: 2px 3px 5px #888888;
+    font-size: 50px;
+    background-color: #00000099;
+    border-radius: 10px;
+    padding: 0%;
+    margin: 0% 0% 1% 0%;
 }
 
-.accent{
-    font-size: 25px;
-    color: #aaffee;
+h2{
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    color: #b7ff00;
+    text-shadow: 2px 3px 5px #9999ff;
+    font-size: 40px;
+    background-color: #00000055;
     padding: 0%;
     margin: 0%;
-    display: inline;
-    font-family: 'Dosis', sans-serif;
+    border-radius: 10px;
 }
-.linkicon {
-    width: 30px;
-    height: 30px;
-    display: inline;
-    padding: 0%;
-    margin: 0%;
-}
-.abm{
-    background-image: linear-gradient(#00aaee,#0077ff);
+
+a {
     color: #222222;
+    font-family: 'Source Code Pro', monospace;
+    text-shadow: 1px 2px 5px #444444;
+    text-align: center;
     border: #000000 solid 2px;
     border-radius: 15px;
+    padding: 10px;
+    margin: 10px;
+    font-size: 30px;
+    text-decoration: none;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
     transition: all 0.5s;
 }
 
-.abm:hover{
+a:hover {
     color: #000000;
     border: 2px solid #ffffff;
     border-radius: 10px;
+}
+
+#main{
+    display: flex;
+    flex-direction: column;
+}
+
+#pfp{
+    border: 3px solid #000000;
+    border-radius: 100%;
+    width: 256px;
+    height: 256px;
+    align-self: center;
+}
+
+.desc{
+    padding: 0%;
+    margin: 0%;
+    display: inline;
+    align-self: center;
+}
+
+.accent{
+    display: inline;
+    font-size: 25px;
+    font-family: 'Dosis', sans-serif;
+    color: #aaffee;
+    text-shadow: 3px 3px 5px #111111;
+    padding: 0%;
+    margin: 0%;
+}
+
+.linkicon {
+    display: inline;
+    width: 32px;
+    height: 32px;
+    padding: 0%;
+    margin: 0%;
+}
+
+.abm{
+    background-image: linear-gradient(#00aaee,#0077ff);
 }
 
 .links{
     background-image: linear-gradient(#aa00ee,#7700ff);
-    color: #222222;
-    border: #000000 solid 2px;
-    border-radius: 15px;
-    transition: all 0.5s;
 }
 
-.links:hover{
-    color: #000000;
-    border: 2px solid #ffffff;
-    border-radius: 10px;
+.credits{
+    background-image: linear-gradient(#eeaa00,#ff7700);
 }
