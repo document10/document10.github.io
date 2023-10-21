@@ -1,24 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Dosis&family=Playpen+Sans&family=Roboto&family=Source+Code+Pro&display=swap');
 
-* {
-    box-sizing: border-box;
-}
-
 body{
+    box-sizing: border-box;
     background-color: #00ffff;
     background-image: url('img/vvww.png');
-    background-repeat: no-repeat;
-    background-origin: border-box;
-    background-clip: border-box;
     background-size: cover;
-}
-
-section{
-    text-decoration: none;
-    list-style-type: none;
-    padding: 10px;
-    display: flex;
-    flex-direction: column;
+    padding: 0%;
+    margin: 0%;
 }
 
 h1{
@@ -27,49 +15,43 @@ h1{
     color: #eeeeee;
     text-shadow: 2px 3px 5px #888888;
     font-size: 50px;
-    background-color: #00000099;
-    border-radius: 10px;
-    padding: 0%;
-    margin: 0% 0% 1% 0%;
-}
-
-h2{
-    font-family: 'Roboto', sans-serif;
-    text-align: center;
-    color: #b7ff00;
-    text-shadow: 2px 3px 5px #9999ff;
-    font-size: 40px;
-    background-color: #00000055;
     padding: 0%;
     margin: 0%;
-    border-radius: 10px;
-}
+}   
 
 a {
-    color: #222222;
-    font-family: 'Source Code Pro', monospace;
-    text-shadow: 1px 2px 5px #444444;
-    text-align: center;
-    border: #000000 solid 2px;
-    border-radius: 15px;
-    padding: 10px;
-    margin: 10px;
-    font-size: 30px;
     text-decoration: none;
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: center;
-    align-items: center;
-    transition: all 0.5s;
-}
-
-a:hover {
-    color: #000000;
-    border: 2px solid #ffffff;
-    border-radius: 10px;
 }
 
 #main{
+    display: flex;
+    flex-direction: column;
+    padding: 0%;
+    margin: 0%;
+    background-image: linear-gradient(#00000099,#00000000);
+}
+
+#title{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-content: center;
+    padding: 0%;
+    margin: 0%;
+}
+
+#aboutme {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-content: center;
+    padding: 0%;
+    margin: 0%;
+}
+
+#social{
+    padding: 0%;
+    margin: 0%;
     display: flex;
     flex-direction: column;
 }
@@ -80,6 +62,82 @@ a:hover {
     width: 256px;
     height: 256px;
     align-self: center;
+    padding: 0%;
+    margin: 0.5%;
+}
+
+#gh {
+    background-image: linear-gradient(#ffffff,#bbbbbb);
+}
+
+#ri {
+    background-image: linear-gradient(#eeaa00,#ff7700);
+}
+
+#in{
+    background-image: linear-gradient(#ee00aa,#ff0077);
+}
+
+#im{
+    background-image: linear-gradient(#aa00ee,#7700ff);
+}
+
+#ds {
+    background-image: linear-gradient(#00aaee,#0077ff);
+}
+
+#footer {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-content: center;
+    background-color: #00000099;
+    border-radius: 10px;
+    padding: 0%;
+    margin: 1%;
+}
+
+.aboutme{
+    text-align: center;
+    font-size: 25px;
+    font-family: 'Roboto', sans-serif;
+    color: #b7ff00;
+    text-shadow: 2px 3px 5px #9999ff;
+    background-color: #000000aa;
+    border-radius: 10px;
+    padding: 0.25%;
+    margin: 0.5%;
+}
+
+.social{
+    color: #222222;
+    font-family: 'Source Code Pro', monospace;
+    text-align: center;
+    border: #000000 solid 2px;
+    border-radius: 15px;
+    padding: 0.5%;
+    margin: 0.5%;
+    font-size: 30px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s;
+}
+
+.social:hover{
+    color: #000000;
+    border: 2px solid #ffffff;
+    border-radius: 10px;
+    box-shadow: 3px 3px 5px #000000;
+}
+
+.linkicon {
+    display: inline;
+    width: 32px;
+    height: 32px;
+    padding: 0%;
+    margin: 0%;
 }
 
 .desc{
@@ -99,22 +157,17 @@ a:hover {
     margin: 0%;
 }
 
-.linkicon {
-    display: inline;
-    width: 32px;
-    height: 32px;
+.link {
+    color: #ffb700;
+    text-shadow: 5px 5px 5px #000000;
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
     padding: 0%;
-    margin: 0%;
+    margin: 0.75%;
+    transition: all 0.5s;
 }
 
-.abm{
-    background-image: linear-gradient(#00aaee,#0077ff);
-}
-
-.links{
-    background-image: linear-gradient(#aa00ee,#7700ff);
-}
-
-.credits{
-    background-image: linear-gradient(#eeaa00,#ff7700);
+.link:hover {
+    color: #aaff00;
+    text-shadow: 6px 6px 5px #666666;
 }
