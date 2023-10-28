@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Dosis&family=Playpen+Sans&family=Roboto&family=Source+Code+Pro&display=swap');
 
-body{
+html,body{
     box-sizing: border-box;
     background-color: #00ffff;
     background-image: url('img/bg.webp');
@@ -12,7 +12,7 @@ body{
 h1{
     font-family: 'Playpen Sans', cursive;
     text-align: center;
-    color: #eeeeee;
+    color: #ffffff;
     text-shadow: 2px 3px 5px #888888;
     font-size: 50px;
     padding: 0%;
@@ -43,7 +43,7 @@ a {
 #aboutme {
     display: flex;
     flex-flow: row wrap;
-    justify-content: center;
+    justify-content: space-evenly;
     align-content: center;
     padding: 0%;
     margin: 0%;
@@ -63,7 +63,7 @@ a {
     height: 256px;
     align-self: center;
     padding: 0%;
-    margin: 0.5%;
+    margin: 0%;
 }
 
 #gh {
@@ -89,12 +89,13 @@ a {
 #footer {
     display: flex;
     flex-flow: row wrap;
-    justify-content: center;
+    justify-content: space-evenly;
     align-content: center;
-    background-color: #00000099;
+    background-image: linear-gradient(#00000099,#000000dd);
+    backdrop-filter: blur(5px);
     border-radius: 10px;
     padding: 0%;
-    margin: 1%;
+    margin: 0%;
 }
 
 .aboutme{
@@ -106,7 +107,8 @@ a {
     background-color: #000000aa;
     border-radius: 10px;
     padding: 0.25%;
-    margin: 1%;
+    margin: 0% 0% 1% 1%;
+    backdrop-filter: blur(3px);
     transition: all 0.25s;
 }
 
@@ -127,7 +129,7 @@ a {
     margin: 0.25%;
     font-size: 30px;
     display: flex;
-    flex-flow: row wrap;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
     transition: all 0.5s;
@@ -142,8 +144,8 @@ a {
 
 .linkicon {
     display: inline;
-    width: 32px;
-    height: 32px;
+    width: 40px;
+    height: 40px;
     padding: 0%;
     margin: 0%;
 }
@@ -159,13 +161,13 @@ a {
     display: inline;
     font-size: 25px;
     font-family: 'Dosis', sans-serif;
-    color: #aaffee;
+    color: #55ffff;
     text-shadow: 3px 3px 5px #111111;
     padding: 0%;
     margin: 0%;
 }
 
-.link {
+.footer {
     color: #ffb700;
     text-shadow: 5px 5px 5px #000000;
     font-size: 20px;
@@ -175,7 +177,7 @@ a {
     transition: all 0.5s;
 }
 
-.link:hover {
+.footer:hover {
     color: #aaff00;
     text-shadow: 6px 6px 5px #666666;
 }
@@ -196,11 +198,15 @@ a {
         flex-direction: column;
         justify-content: center;
         align-content: center;
+        padding: 0%;
+        margin: 1%;
     }
     #footer{
         flex-direction: column;
         justify-content: center;
         align-content: center;
+        padding: 0%;
+        margin: 1%;
     }
     .aboutme {
         font-size: 30px;
@@ -210,10 +216,20 @@ a {
     }
     .social {
         font-size: 40px;
+        justify-content: space-between;
     }
-    .link{
-        text-align: center;
+    .footer{
         font-size: 25px;
-        margin: 1.5%;
+        text-align: center;
+        padding: 0%;
+        margin: 1.5% 0% 1.5% 0%;
+        width: 100%;
+    }
+    .accent{
+        font-size: 20px;
+    }
+    .linkicon {
+        width: 45px;
+        height: 45px;
     }
 }
