@@ -1,12 +1,18 @@
-@import url('https://fonts.googleapis.com/css2?family=Dosis&family=Playpen+Sans&family=Roboto&family=Source+Code+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playpen+Sans&family=Ubuntu&display=swap');
 
 html,body{
     box-sizing: border-box;
-    background-color: #00ffff;
-    background-image: url('img/bg.webp');
+    background-color: #00aaaa;
+    background-image: url('./img/bg.webp');
     background-size: cover;
     padding: 0%;
     margin: 0%;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
 }
 
 h1{
@@ -14,9 +20,11 @@ h1{
     text-align: center;
     color: #ffffff;
     text-shadow: 2px 3px 5px #888888;
-    font-size: 50px;
+    font-size: 7vh;
     padding: 0%;
-    margin: 0%;
+    margin: 1%;
+    justify-self: center;
+    align-self: center;
 }   
 
 a {
@@ -26,24 +34,19 @@ a {
 #main{
     display: flex;
     flex-direction: column;
+    align-content: center;
+    justify-content: center;
     padding: 0%;
     margin: 0%;
-    background-image: linear-gradient(#00000099,#00000000);
+    background-image: linear-gradient(#00000000,#00000099,#00000000);
+    width: 100%;
+    height: 100%;
 }
 
 #title{
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-content: center;
-    padding: 0%;
-    margin: 0%;
-}
-
-#aboutme {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-evenly;
+    justify-content: flex-start;
     align-content: center;
     padding: 0%;
     margin: 0%;
@@ -51,39 +54,41 @@ a {
 
 #social{
     padding: 0%;
-    margin: 0%;
+    margin: 2%;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
 }
 
 #pfp{
     border: 3px solid #000000;
     border-radius: 100%;
-    width: 256px;
-    height: 256px;
+    width: 30vh;
+    height: 30vh;
     align-self: center;
     padding: 0%;
     margin: 0%;
 }
 
-#gh {
-    background-image: linear-gradient(#ffffff,#bbbbbb);
-}
-
-#ri {
-    background-image: linear-gradient(#eeaa00,#ff7700);
-}
-
-#in{
-    background-image: linear-gradient(#ee00aa,#ff0077);
-}
-
-#im{
-    background-image: linear-gradient(#aa00ee,#7700ff);
-}
-
-#ds {
-    background-image: linear-gradient(#00aaee,#0077ff);
+#aboutme{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-content: center;
+    padding: 0%;
+    margin: 5%;
+    text-wrap: balance;
+    text-align: center;
+    font-size: 3.5vh;
+    font-family: 'Ubuntu', sans-serif;
+    color: #b7ff00;
+    text-shadow: 2px 3px 5px #9999ff;
+    border-radius: 10px;
+    padding: 0.25%;
+    margin: 0% 0% 1% 1%;
+    transition: all 0.25s;
 }
 
 #footer {
@@ -93,61 +98,34 @@ a {
     align-content: center;
     background-image: linear-gradient(#00000099,#000000dd);
     backdrop-filter: blur(5px);
+    border: #000000 1px solid;
     border-radius: 10px;
     padding: 0%;
-    margin: 0%;
-}
-
-.aboutme{
-    text-align: center;
-    font-size: 25px;
-    font-family: 'Roboto', sans-serif;
-    color: #b7ff00;
-    text-shadow: 2px 3px 5px #9999ff;
-    background-color: #000000aa;
-    border-radius: 10px;
-    padding: 0.25%;
-    margin: 0% 0% 1% 1%;
-    backdrop-filter: blur(3px);
-    transition: all 0.25s;
-}
-
-.aboutme:hover{
-    color: #b7ff00;
-    text-shadow: 2px 3px 5px #ff99ff;
-    background-color: #000000ff;
-    border-radius: 5px;
+    margin: 0% 3% 0% 3%;
 }
 
 .social{
-    color: #222222;
-    font-family: 'Source Code Pro', monospace;
     text-align: center;
-    border: #000000 solid 2px;
-    border-radius: 15px;
     padding: 0.5%;
-    margin: 0.25%;
-    font-size: 30px;
+    margin: 0.5% 3% 0.5% 3%;
     display: flex;
-    flex-direction: row;
+    flex-flow: row nowrap;
     justify-content: center;
     align-items: center;
+    filter: invert(100%);
     transition: all 0.5s;
 }
 
 .social:hover{
-    color: #000000;
-    border: 2px solid #ffffff;
-    border-radius: 10px;
-    box-shadow: 3px 3px 5px #000000;
+    filter: invert(80%) sepia(9%) saturate(5245%) hue-rotate(104deg) brightness(98%) contrast(106%);
 }
 
 .linkicon {
     display: inline;
-    width: 40px;
-    height: 40px;
+    width: 6vh;
+    height: 6vh;
     padding: 0%;
-    margin: 0%;
+    margin: 10%;
 }
 
 .desc{
@@ -170,8 +148,8 @@ a {
 .footer {
     color: #ffb700;
     text-shadow: 5px 5px 5px #000000;
-    font-size: 20px;
-    font-family: 'Roboto', sans-serif;
+    font-size: 2vh;
+    font-family: 'Ubuntu', sans-serif;
     padding: 0%;
     margin: 0.75%;
     transition: all 0.5s;
@@ -184,42 +162,36 @@ a {
 
 @media screen and (max-width: 700px) {
     h1 {
-        font-size: 60px;
+        font-size: 8vh;
         padding: 0%;
         margin: 0%;
     }
-    #pfp{
-        width: 50%;
-        height: 50%;
-        padding: 0%;
-        margin: 0%;
-    }
+    
     #aboutme {
-        flex-direction: column;
-        justify-content: center;
-        align-content: center;
+        font-size: 2.5vh;
+        text-align: center;
         padding: 0%;
         margin: 1%;
     }
+    
+    #pfp {
+        width: 50vw;
+        height: 50vw;
+    }
+    
     #footer{
         flex-direction: column;
         justify-content: center;
         align-content: center;
         padding: 0%;
-        margin: 1%;
-    }
-    .aboutme {
-        font-size: 30px;
-        text-align: center;
-        padding: 0.5%;
-        margin: 0.5% 0% 0.5% 0%;
+        margin: 1% 4% 1% 4%;
     }
     .social {
-        font-size: 40px;
         justify-content: space-between;
+        margin: 2%;
     }
     .footer{
-        font-size: 25px;
+        font-size: 3vh;
         text-align: center;
         padding: 0%;
         margin: 1.5% 0% 1.5% 0%;
@@ -229,7 +201,7 @@ a {
         font-size: 20px;
     }
     .linkicon {
-        width: 45px;
-        height: 45px;
+        width: 5vh;
+        height: 5vh;
     }
 }
