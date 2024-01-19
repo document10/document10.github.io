@@ -11,7 +11,6 @@ html,body{
     height: 100%;
     display: flex;
     flex-direction: column;
-    align-content: center;
     justify-content: center;
 }
 
@@ -22,8 +21,7 @@ h1{
     text-shadow: 2px 3px 5px #888888;
     font-size: 7vh;
     padding: 0%;
-    margin: 1%;
-    justify-self: center;
+    margin: 0%;
     align-self: center;
 }   
 
@@ -34,11 +32,9 @@ a {
 #main{
     display: flex;
     flex-direction: column;
-    align-content: center;
     justify-content: center;
     padding: 0%;
     margin: 0%;
-    background-image: linear-gradient(#00000000,#00000099,#00000000);
     width: 100%;
     height: 100%;
 }
@@ -47,17 +43,15 @@ a {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    align-content: center;
     padding: 0%;
     margin: 0%;
 }
 
 #social{
     padding: 0%;
-    margin: 2%;
+    margin: 1vh 10vw;
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    flex-flow: row wrap;
     align-content: center;
     justify-content: center;
 }
@@ -76,18 +70,16 @@ a {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    align-content: center;
     padding: 0%;
-    margin: 5%;
+    margin: 1vh 7vw;
     text-wrap: balance;
     text-align: center;
     font-size: 3.5vh;
     font-family: 'Ubuntu', sans-serif;
-    color: #b7ff00;
-    text-shadow: 2px 3px 5px #9999ff;
+    color: #60cdef;
+    text-shadow: 3px 3px 3px #010101;
     border-radius: 10px;
-    padding: 0.25%;
-    margin: 0% 0% 1% 1%;
+    backdrop-filter: blur(5px);
     transition: all 0.25s;
 }
 
@@ -96,49 +88,30 @@ a {
     flex-flow: row wrap;
     justify-content: space-evenly;
     align-content: center;
-    background-image: linear-gradient(#00000099,#000000dd);
+    background-color: #000000aa;
     backdrop-filter: blur(5px);
-    border: #000000 1px solid;
+    border: #000000 2px solid;
     border-radius: 10px;
     padding: 0%;
-    margin: 0% 3% 0% 3%;
+    margin: 0% 3vw;
 }
 
 .social{
-    text-align: center;
-    padding: 0.5%;
-    margin: 0.5% 3% 0.5% 3%;
-    filter: invert(100%);
-    transition: all 0.5s;
-}
-
-.social:hover{
-    filter: invert(80%) sepia(9%) saturate(5245%) hue-rotate(104deg) brightness(98%) contrast(106%);
+    padding: 0%;
+    margin: 2vh 2.5vw;
 }
 
 .linkicon {
-    display: inline;
     width: 6vh;
     height: 6vh;
     padding: 0%;
-    margin: 10%;
+    margin: 0%;
+    transition: all 0.5s;
+    filter: invert(10%) sepia(100%) saturate(7380%) hue-rotate(245deg) brightness(110%) contrast(125%) drop-shadow(8px 8px 5px #000000);
 }
 
-.desc{
-    padding: 0%;
-    margin: 0%;
-    display: inline;
-    align-self: center;
-}
-
-.accent{
-    display: inline;
-    font-size: 25px;
-    font-family: 'Dosis', sans-serif;
-    color: #55ffff;
-    text-shadow: 3px 3px 5px #111111;
-    padding: 0%;
-    margin: 0%;
+.linkicon:hover{
+    filter: invert(80%) sepia(10%) saturate(5255%) hue-rotate(100deg) brightness(100%) contrast(110%) drop-shadow(8px 8px 5px #000000);
 }
 
 .footer {
@@ -156,47 +129,55 @@ a {
     text-shadow: 6px 6px 5px #666666;
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 600px) {
+
     h1 {
-        font-size: 8vh;
+        font-size: 12vw;
+        line-height: 13vw;
         padding: 0%;
         margin: 0%;
     }
     
     #aboutme {
-        font-size: 2.5vh;
+        font-size: 5.5vw;
+        line-height: 5.5vw;
         text-align: center;
         padding: 0%;
-        margin: 1%;
+        margin: 0%;
     }
     
     #pfp {
         width: 50vw;
         height: 50vw;
+        margin: 0%;
     }
     
+    #social {
+        margin: 0%;
+    }
+
     #footer{
         flex-direction: column;
         justify-content: center;
         align-content: center;
         padding: 0%;
-        margin: 1% 4% 1% 4%;
+        margin: 1vh 4vw 0% 4vw;
     }
+
     .social {
-        margin: 1%;
+        margin: 1vh 3vw;
     }
+
     .footer{
-        font-size: 3vh;
+        font-size: 6vw;
         text-align: center;
         padding: 0%;
-        margin: 1.5% 0% 1.5% 0%;
+        margin: 0.5vh 0%;
         width: 100%;
     }
-    .accent{
-        font-size: 20px;
-    }
+
     .linkicon {
-        width: 5vh;
-        height: 5vh;
+        width: 12vw;
+        height: 12vw;
     }
 }
