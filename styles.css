@@ -72,6 +72,7 @@ a {
     text-wrap: balance;
     text-align: center;
     font-size: 3.5vh;
+    line-height: 4vh;
     font-family: 'Ubuntu', sans-serif;
     color: #40ee60;
     text-shadow: 3px 3px 3px #010101;
@@ -96,8 +97,6 @@ a {
 
 .ext {
     color: #d0ef11;
-    font-size: 3.5vh;
-    font-family: 'Ubuntu', sans-serif;
     text-shadow: 2px 3px 4px #101010;
     transition: all 0.25s;
 }
@@ -109,7 +108,7 @@ a {
 
 .social{
     padding: 0%;
-    margin: 2vh 2.5vw;
+    margin: 2vh 2vw;
 }
 
 .linkicon {
@@ -117,7 +116,7 @@ a {
     height: 6vh;
     padding: 0%;
     margin: 0%;
-    filter: invert(25%) sepia(100%) saturate(7500%) hue-rotate(315deg) brightness(105%) contrast(105%) opacity(100%) drop-shadow(8px 8px 5px #000000);
+    filter: invert(25%) sepia(100%) saturate(7500%) hue-rotate(315deg) brightness(105%) contrast(105%) opacity(100%) drop-shadow(8px 8px 5px #010101);
     transform: none;
     transition: all 0.5s;
 }
@@ -140,7 +139,7 @@ a {
 
 .footer:hover {
     color: #aaff00;
-    transform: scale(105%);
+    transform: scale(110%);
     text-shadow: 6px 6px 5px #666666;
 }
 
@@ -155,7 +154,7 @@ a {
 
     #aboutme {
         font-size: 5.5vw;
-        line-height: 5.5vw;
+        line-height: 6vw;
         text-align: center;
         padding: 0%;
         margin: 0% 1vw ;
@@ -198,7 +197,7 @@ a {
     }
 
     .linkicon {
-        width: 12vw;
-        height: 12vw;
+        width: 10vw;
+        height: 10vw;
     }
 }
