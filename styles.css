@@ -2,7 +2,6 @@
 
 html,body{
     box-sizing: border-box;
-    background-color: #00aaaa;
     background-image: url('./img/bg.webp');
     background-size: cover;
     padding: 0%;
@@ -74,12 +73,11 @@ a {
     font-size: 3.5vh;
     line-height: 4vh;
     font-family: 'Ubuntu', sans-serif;
-    color: #40ee60;
+    color: #93AAE9;
     text-shadow: 3px 3px 3px #010101;
     border: #000000 solid 1px;
     border-radius: 10px;
     backdrop-filter: blur(5px);
-    transition: all 0.25s;
 }
 
 #footer {
@@ -96,19 +94,19 @@ a {
 }
 
 .ext {
-    color: #d0ef11;
+    color: #f788d0;
     text-shadow: 2px 3px 4px #101010;
-    transition: all 0.25s;
+    transition: all 0.3s ease-in;
 }
 
 .ext:hover{
-    color: #aa4477;
+    color: #D94897;
     text-shadow: 3px 2px 4px #010101;
 }
 
 .social{
     padding: 0%;
-    margin: 2vh 2vw;
+    margin: 1vh 1vw;
 }
 
 .linkicon {
@@ -116,31 +114,31 @@ a {
     height: 6vh;
     padding: 0%;
     margin: 0%;
-    filter: invert(25%) sepia(100%) saturate(7500%) hue-rotate(315deg) brightness(105%) contrast(105%) opacity(100%) drop-shadow(8px 8px 5px #010101);
+    filter: invert(80%) sepia(10%) saturate(2210%) hue-rotate(360deg) brightness(105%) contrast(100%) drop-shadow(8px 8px 5px #010101);
     transform: none;
-    transition: all 0.5s;
+    transition: all 0.4s ease-out;
 }
 
 .linkicon:hover{
-    filter: invert(60%) sepia(90%) saturate(1420%) hue-rotate(70deg) brightness(100%) contrast(100%) opacity(90%) drop-shadow(8px 8px 5px #101010);
+    filter: invert(55%) sepia(55%) saturate(1380%) hue-rotate(330deg) brightness(100%) contrast(100%) drop-shadow(8px 8px 5px #101010);
     transform: scale(125%);
 }
 
 .footer {
-    color: #ffb700;
+    color: #E3657B;
     text-shadow: 5px 5px 5px #000000;
     font-size: 2vh;
     font-family: 'Ubuntu', sans-serif;
     padding: 0%;
     margin: 0.75%;
     transform: none;
-    transition: all 0.5s;
+    transition: all 0.4s ease-out;
 }
 
 .footer:hover {
-    color: #aaff00;
+    color: #F26B6B;
     transform: scale(110%);
-    text-shadow: 6px 6px 5px #666666;
+    text-shadow: 6px 6px 5px #5a2e34;
 }
 
 @media screen and (max-width: 600px) {
@@ -154,7 +152,7 @@ a {
 
     #aboutme {
         font-size: 5.5vw;
-        line-height: 6vw;
+        line-height: 5vw;
         text-align: center;
         padding: 0%;
         margin: 0% 1vw ;
@@ -182,18 +180,17 @@ a {
         font-size: 5.5vw;
         line-height: 5.5vw;
         font-family: 'Ubuntu', sans-serif;
-        transition: all 0.5s;
     }
 
     .social {
-        margin: 1vh 3vw;
+        margin: 1vh 4vw;
     }
 
     .footer{
         font-size: 7vw;
         text-align: center;
         padding: 0%;
-        margin: 1vh 4vw;
+        margin: 0vh 4vw;
     }
 
     .linkicon {
